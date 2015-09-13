@@ -10,6 +10,9 @@ class Netpgpverify < Formula
     ENV["CFLAGS"] = "-Wno-deprecated-declarations"
     system "./configure", "--prefix=#{prefix}",
                           "--mandir=#{man}"
+    system "make"
+    system "mkdir", "-p", "#{prefix}"
+    system "mkdir", "-p", "#{man}"
     system "make", "install"
   end
 
