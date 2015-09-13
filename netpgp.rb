@@ -2,9 +2,9 @@ require "formula"
 
 class Netpgp < Formula
   homepage "http://www.netpgp.com"
-  url "http://www.netpgp.com/src/netpgp.tar.gz"
-  sha1 "de61bdaaace4778608ab89be1ef6da9bbf5e18ee"
-  version "3.99.14"
+  url "http://www.netpgp.com/src/netpgp-20140220.tar.gz"
+  sha1 "815418cbae5d02a1385cd7947618303e5aa06d5c"
+  version "3.99.17"
 
   def install
     ENV["CFLAGS"] = "-Wno-deprecated-declarations"
